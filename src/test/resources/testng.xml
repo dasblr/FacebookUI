@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Facebook UI Test Case">
+    <listeners>
+        <listener class-name="org.regression.test.utils.SuiteListeners"></listener>
+    </listeners>
+    <test name="Test" thread-count="5">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="username" value="7219553758"></parameter>
+        <parameter name="password" value="Xuv@2023"></parameter>
+        <classes>
+            <class name="org.regression.test.testModules.FacebookTest"></class>
+        </classes>
+    </test>
+</suite>
